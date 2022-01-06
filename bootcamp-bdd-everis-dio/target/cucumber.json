@@ -1,0 +1,157 @@
+[
+  {
+    "line": 5,
+    "elements": [
+      {
+        "start_timestamp": "2022-01-05T23:37:02.357Z",
+        "before": [
+          {
+            "result": {
+              "duration": 9927300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.everis.util.Hooks.beforeCenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 18,
+        "name": "Aumentar a quantidade de produto através do detalhes do produto",
+        "description": "",
+        "id": "realizar-compra-no-e-commerce;aumentar-a-quantidade-de-produto-através-do-detalhes-do-produto",
+        "after": [
+          {
+            "result": {
+              "duration": 4355345400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.everis.util.Hooks.afterCenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 39381936300,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "que um usuario acessa o site \"http://automationpractice.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://automationpractice.com",
+                  "offset": 30
+                }
+              ],
+              "location": "com.everis.steps.HomeSteps.acessarSite(java.lang.String)"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 3564180000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "pesquisa pelo produto \"Dress\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Dress",
+                  "offset": 23
+                }
+              ],
+              "location": "com.everis.steps.HomeSteps.pesquisarProduto(java.lang.String)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 1998860100,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "acessa o produto \"Printed Chiffon Dress\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Printed Chiffon Dress",
+                  "offset": 18
+                }
+              ],
+              "location": "com.everis.steps.ResultadoPesquisaSteps.acessarProduto(java.lang.String)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 220067000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "aumenta a quantidade produto",
+            "match": {
+              "location": "com.everis.steps.DetalheProdutoSteps.aumentarQuantidadeProduto()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 5066635700,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "adiciona o produto \"Printed Chiffon Dress\" ao carrinho",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Printed Chiffon Dress",
+                  "offset": 20
+                }
+              ],
+              "location": "com.everis.steps.ResultadoPesquisaSteps.adicionarProdutoAoCarrinho(java.lang.String)"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 182877200,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "o produto \"Printed Chiffon Dress\" deve possuir a quantidade 2",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Printed Chiffon Dress",
+                  "offset": 11
+                },
+                {
+                  "val": "2",
+                  "offset": 60
+                }
+              ],
+              "location": "com.everis.steps.CarrinhoSteps.oProdutoApresentouQuantidadeEsperada(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@test"
+          }
+        ]
+      }
+    ],
+    "name": "Realizar Compra no E-commerce",
+    "description": "\tComo um comprador\n\tQuero ver a lista de produtos disponiveis\n\tPara que eu possa escolher qual devo comprar",
+    "id": "realizar-compra-no-e-commerce",
+    "keyword": "Funcionalidade",
+    "uri": "classpath:features/RealizaCompra.feature",
+    "tags": []
+  }
+]
